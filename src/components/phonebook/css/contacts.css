@@ -1,0 +1,24 @@
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  text-align: left;
+  margin-top: 50px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 20px;
+  border: 1px rgb(0, 0, 0) solid;
+}
+.contacts-items span,
+.contacts-items button {
+  margin-left: 20px;
+}
+.contacts li {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

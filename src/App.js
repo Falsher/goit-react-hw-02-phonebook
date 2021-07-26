@@ -4,6 +4,7 @@ import Container from './components/phonebook/container';
 import Phonebook from './components/phonebook/phonebook';
 import Contacts from './components/phonebook/contacts';
 import Filter from './components/phonebook/filter';
+import './components/phonebook/css/contacts.css';
 class App extends Component {
   state = {
     contacts: [

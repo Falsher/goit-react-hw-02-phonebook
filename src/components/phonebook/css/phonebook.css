@@ -1,0 +1,23 @@
+.formFilling {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formFilling label {
+  font-size: 20px;
+  font-weight: 600;
+}
+.buttonAdd {
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  background-color: aqua;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.inputContact {
+  width: 200px;
+  margin-left: 20px;
+}

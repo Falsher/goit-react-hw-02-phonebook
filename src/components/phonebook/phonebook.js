@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import shortid from 'shortid';
+import './css/phonebook.css';
 class Phonebook extends Component {
   state = {
     textName: '',
@@ -24,10 +25,11 @@ class Phonebook extends Component {
   };
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="formFilling" onSubmit={this.handleSubmit}>
         <label>
           Name
           <input
+            className="inputContact"
             type="text"
             name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -40,6 +42,7 @@ class Phonebook extends Component {
         <label>
           Number phone
           <input
+            className="inputContact"
             type="tel"
             name="number"
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -50,7 +53,9 @@ class Phonebook extends Component {
           />
         </label>
 
-        <button type="submit">Add contact</button>
+        <button className="buttonAdd" type="submit">
+          Add contact
+        </button>
       </form>
     );
   }
